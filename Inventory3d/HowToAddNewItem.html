@@ -44,11 +44,34 @@
 											if they get too long. You can also remove the <p> entirely if you don't
 											need a subtitle.
 										-->
-										<h2><a href="#">Welcome to Striped</a></h2>
-										<p>A free, fully responsive HTML5 site template by HTML5 UP</p>
+										<h2><a href="#">How to add a new item</a></h2>
+										<p>For Example I take Static Mesh From Quixel Megascans.</p>
 									</header>
 									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 									<p>
+										Go to "Inventory3D->Inventory->Blueprints" folder
+and right click on "BP_Master_Item". Press "Create Child Blueprint Class".
+
+Name it whant you want. I named "BP_Item_Banana".
+Open it. "Press Class Defaults" button and in "Details Tab" find "Item Structure".
+Set all the settings as you need. I took a banana from Quixel. And my settings look like this.
+We see that a 3D object has appeared on the screen.
+Position the object as you need. It should be in the center. Auxiliary arrows are present for the correct positioning of the object. For a correct understanding, I am showing you a screenshot of which sides the item will look in the inventory.
+
+To check if we have placed the item correctly, take the "BP_PickUp_item" which is located in the same folder and move it in your level.
+
+In details chose Item Class of you new item. I chose BP_Item_Banana.
+
+Expose amount and scale
+
+We see that the item is well positioned in inventory.
+
+
+But when we throw it out into the world, we see that the object is too small.
+
+Set the desired size in the pickup item. Сopy it. Back to the settings of your item, where we set all the parameters.
+Аnd insert the value into the bottommost parameter "PickUP Item Scale".
+Now the item is thrown in the size we need.
 										<strong>Hello!</strong> You're looking at <strong>Striped</strong>, a fully responsive HTML5 site template designed by <a href="http://n33.co">AJ</a>
 										for <a href="http://html5up.net">HTML5 UP</a> It features a clean, minimalistic design, styling for all basic page elements (including blockquotes, tables and lists), a
 										repositionable sidebar (left or right), and HTML5/CSS3 code designed for quick and easy customization (see code comments for details).
