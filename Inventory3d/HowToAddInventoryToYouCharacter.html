@@ -44,57 +44,65 @@
 											if they get too long. You can also remove the <p> entirely if you don't
 											need a subtitle.
 										-->
-										<h2><a href="#">How to add a new item</a></h2>
+										<h2><a href="#">How To Add Inventory To You Character</a></h2>
 										
 									</header>
 									
-									<p><p>For Example I take Static Mesh From Quixel Megascans.</p>
-										<h1 style='font-family: Open Sans; color: rgba(33,33,33,1);font-size: 14pt;line-height: 1.6;margin-top: 15px;'>Go to "Inventory3D->Inventory->Blueprints" folder. <br>
-										Right click on "BP_Master_Item". Press "Create Child Blueprint Class".</h1>
-										<br><a><img src="images/pic01.png" alt="" /></a>
+							
+										<br>
 
-<h1 style='font-family: Open Sans; color: rgba(33,33,33,1); font-size: 14pt;line-height: 1.6;margin-top: 15px; white-space: pre;'>Name it whant you want. I named "BP_Item_Banana".
+<h1 style='font-family: Open Sans; color: rgba(33,33,33,1); word-wrap: break-word; font-size: 14pt;line-height: 1.6;margin-top: 15px; white-space: pre;'>Open your character blueprint.
+Click "Add Component" and write "BP Inventory Component".
 
-<a><img src="images/2.png" alt="" /></a>
+<img src="images/q/q2.png" alt=""  />
 
-Open it. "Press Class Defaults" button and in "Details" tab find "Item Structure".
-Set all the settings as you need. I took a banana from Quixel. And my settings look like this.
+Drag the component into the graph, pull out the pin from it and get the control nodes from it.
 
-<a><img src="images/5.png" alt="" width="600"/></a>
+<img src="images/q/q3.png" alt=""width="800"/>
 
-We see that a 3D object has appeared on the screen.
-Position the object as you need. 
+Set up controls like this:
 
-<a><img src="images/7.png" alt="" width="500"/></a>
+<img src="images/q/q4.png" alt=""width="800"/>
 
-It should be in the center. Auxiliary arrows are present for the correct positioning of the object. 
-For a correct understanding, I am showing you a screenshot of which sides the item will look in the inventory.
+The inventory is automatically attached to your character's camera component,
+but if you want to attach it to another component or camera component, you can use these nodes:
 
-<a><img src="images/14.png" alt="" /></a>
+<img src="images/q/117.png" alt=""width="400"/>
 
-To check if we have placed the item correctly, take the "BP_PickUp_item" which is located in the same folder and move it in your level.
-In details chose Item Class of you new item. I chose BP_Item_Banana.
-Expose amount and scale.
+On the Components tab, click on "BP_InventoryComponent" and select the options you need.
+You can choose Interactions Pressets or choose "None" and using interactions Nodes.
 
-<a><img src="images/15.png" alt="" /></a>
+<img src="images/q/q1.png" alt=""width="800"/>
 
-We see that the item is well positioned in inventory.
-But when we throw it out into the world, we see that the object is too small.
+I choose "Third Person Preset". I turned off the option "Disable Movement When Opened" 
+because when we open the inventory when we jump, the character stops in the air.
+Instead, I block the movement like this:
 
-<a><img src="images/10.png" alt="" width="800" /></a>
+<img src="images/q/q7.png" alt=""width="800"/>
+<img src="images/q/q8.png" alt=""width="800"/>
 
-Set the desired size in the pickup item. Сopy it.
+If we have selected one of the interaction presets, we can add the "Visualize Pick Up Box Collision" node to the Construction Script
+to visualize the area in which we can interact with objects.
 
-<a><img src="images/17.png" alt="" /></a>
+<img src="images/q/q11.png" alt=""width="800"/>
 
-Back to the settings of your item, where we set all the parameters.
-Аnd insert the value into the bottommost parameter "PickUP Item Scale".
+Now we can set the desired interaction area in the Inventory Component.
 
-<a><img src="images/11.png" alt="" /></a>
+<img src="images/q/q12.png" alt=""width="800"/>
 
-Now the item is thrown in the size we need.
+Here is a list of all the nodes you can use:
 
-<a><img src="images/12.png" alt=""width="800" /></a>
+<img src="images/q/q13.png" alt=""width="800"/>
+
+I also take the inventory reference for the begin play event.
+In order to get access to all the functions of the inventory.
+
+<img src="images/q/q14.png" alt=""width="800"/>
+
+Here is a list of all the nodes and dispatchers you can use:
+
+<img src="images/q/q15.png" alt=""width="300"/>
+<img src="images/q/q16.png" alt=""width="300"/>
 
 <a href="#">Done.</a>
 </h1> </article>
