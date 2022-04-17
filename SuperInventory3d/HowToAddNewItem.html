@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>How to Add A New Item</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+		
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<!--
+		Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+		Set it to "right-sidebar" to, you guessed it, position it on the right.
+	-->
+	<body class="left-sidebar">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Content -->
+					<div id="content">
+						<div class="inner">
+					
+							<!-- Post -->
+								<article class="box post post-excerpt">
+									<header>
+										<!--
+											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+											if they get too long. You can also remove the <p> entirely if you don't
+											need a subtitle.
+										-->
+										<h2><a href="#">How to add a new item</a></h2>
+										
+									</header>
+									
+									<iframe width="850" height="480" src="https://www.youtube.com/embed/p6zvhjj0vbo" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								
+									<p><p>For Example I take Static Mesh From Quixel Megascans.</p>
+										<h1 style='font-family: Open Sans; color: rgba(33,33,33,1);font-size: 14pt;line-height: 1.6;margin-top: 15px;'>Go to "Inventory3D->Inventory->Blueprints" folder. <br>
+										Right click on "BP_Master_Item". Press "Create Child Blueprint Class".</h1>
+										<br><a><img src="images/pic01.png" alt="" /></a></div>
+
+<h1 style='font-family: Open Sans; color: rgba(33,33,33,1); font-size: 14pt;line-height: 1.6;margin-top: 15px; white-space: pre;'>Name it whant you want. I named "BP_Item_Banana".
+
+<a><img src="images/2.png" alt="" /></a>
+
+Open it. "Press Class Defaults" button and in "Details" tab find "Item Structure".
+Set all the settings as you need. I took a banana from Quixel. And my settings look like this.
+
+<a><img src="images/5.png" alt="" width="600"/></a>
+
+We see that a 3D object has appeared on the screen.
+Position the object as you need. 
+
+<a><img src="images/7.png" alt="" width="500"/></a>
+
+It should be in the center. Auxiliary arrows are present for the correct positioning of the object. 
+For a correct understanding, I am showing you a screenshot of which sides the item will look in the inventory.
+
+<a><img src="images/14.png" alt="" /></a>
+
+To check if we have placed the item correctly, take the "BP_PickUp_item" which is located in the same folder and move it in your level.
+In details chose Item Class of you new item. I chose BP_Item_Banana.
+Expose amount and scale.
+
+<a><img src="images/15.png" alt="" /></a>
+
+We see that the item is well positioned in inventory.
+But when we throw it out into the world, we see that the object is too small.
+
+<a><img src="images/10.png" alt="" width="800" /></a>
+
+Set the desired size in the pickup item. Сopy it.
+
+<a><img src="images/17.png" alt="" /></a>
+
+Back to the settings of your item, where we set all the parameters.
+Аnd insert the value into the bottommost parameter "PickUP Item Scale".
+
+<a><img src="images/11.png" alt="" /></a>
+
+Now the item is thrown in the size we need.
+
+<a><img src="images/12.png" alt=""width="800" /></a>
+
+<a href="#">Done.</a>
+</h1> </article>
+				 <!-- Pagination -->
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+					
+						<!-- Logo -->
+							<h1 id="logo"><a href="/Inventory3d/index.html">Inventory</a></h1>
+					
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="/Inventory3d/input.html">Project Settings</a></li>
+									<li><a href="/Inventory3d/HowToAddInventoryToYouCharacter.html">How To Add Inventory To You Character</a></li>
+									<li><a href="/Inventory3d/HowToAddNewItem.html">How To Add new Item</a></li>
+									<li><a href="/Inventory3d/usagelogic.html">How to add usage logic to an item</a></li>
+						<li><a href="/Inventory3d/Howtovisualizethenumberofitemsinastack.html">How to visualize the number of items in a stack</a></li>
+									<li><a href="/Inventory3d/inventorytab.html">How to add a new tab and item type</a></li>
+							        <li><a href="/Inventory3d/staticmeshtoinventorytab.html">How to add custom static mesh to inventory tab</a></li>
+									<li><a href="/Inventory3d/storageorstore.html">How to create a storage or store</a></li>
+									<li><a href="/Inventory3d/newequipmentslot.html">How to add a new equipment slot</a></li>
+
+								</ul>
+							</nav>
+					</div>
+
+			</div>
+
+	</body>
+</html>
